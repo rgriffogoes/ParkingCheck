@@ -1,4 +1,20 @@
 ParkingCheck::Application.routes.draw do
+  resources :car_parks
+
+  resources :check_groups
+
+  resources :parking_lots
+
+  resources :cars
+
+  resources :microposts
+
+  resources :models
+
+  resources :brands
+
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

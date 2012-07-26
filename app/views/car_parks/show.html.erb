@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Checkgroup:</b>
+  <%= @car_park.checkGroup_id %>
+</p>
+
+<p>
+  <b>Car:</b>
+  <%= @car_park.car_id %>
+</p>
+
+<p>
+  <b>Parkinglot:</b>
+  <%= @car_park.parkingLot_id %>
+</p>
+
+<p>
+  <b>Obs:</b>
+  <%= @car_park.obs %>
+</p>
+
+<p>
+  <b>Building:</b>
+  <%= @car_park.building %>
+</p>
+
+<p>
+  <b>Apartment:</b>
+  <%= @car_park.apartment %>
+</p>
+
+
+<%= link_to 'Edit', edit_car_park_path(@car_park) %> |
+<%= link_to 'Back', car_parks_path %>

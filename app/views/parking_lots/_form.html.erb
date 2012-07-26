@@ -1,0 +1,41 @@
+<%= form_for(@parking_lot) do |f| %>
+  <% if @parking_lot.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@parking_lot.errors.count, "error") %> prohibited this parking_lot from being saved:</h2>
+
+      <ul>
+      <% @parking_lot.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :building %><br />
+    <%= f.number_field :building %>
+  </div>
+  <div class="field">
+    <%= f.label :apartment %><br />
+    <%= f.number_field :apartment %>
+  </div>
+  <div class="field">
+    <%= f.label :x %><br />
+    <%= f.number_field :x %>
+  </div>
+  <div class="field">
+    <%= f.label :y %><br />
+    <%= f.number_field :y %>
+  </div>
+  <div class="field">
+    <%= f.label :angle %><br />
+    <%= f.number_field :angle %>
+  </div>
+  <div class="field">
+    <%= f.label :obs %><br />
+    <%= f.text_field :obs %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

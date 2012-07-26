@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  checkGroup_id: 1
+  car_id: 1
+  parkingLot_id: 1
+  obs: MyString
+  building: 1
+  apartment: 1
+
+two:
+  checkGroup_id: 1
+  car_id: 1
+  parkingLot_id: 1
+  obs: MyString
+  building: 1
+  apartment: 1

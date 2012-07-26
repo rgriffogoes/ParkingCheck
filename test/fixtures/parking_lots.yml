@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  building: 1
+  apartment: 1
+  x: 1
+  y: 1
+  angle: 1
+  obs: MyString
+
+two:
+  building: 1
+  apartment: 1
+  x: 1
+  y: 1
+  angle: 1
+  obs: MyString

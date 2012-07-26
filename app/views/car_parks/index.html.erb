@@ -1,0 +1,33 @@
+<h1>Listing car_parks</h1>
+
+<table>
+  <tr>
+    <th>Checkgroup</th>
+    <th>Car</th>
+    <th>Parkinglot</th>
+    <th>Obs</th>
+    <th>Building</th>
+    <th>Apartment</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @car_parks.each do |car_park| %>
+  <tr>
+    <td><%= car_park.checkGroup_id %></td>
+    <td><%= car_park.car_id %></td>
+    <td><%= car_park.parkingLot_id %></td>
+    <td><%= car_park.obs %></td>
+    <td><%= car_park.building %></td>
+    <td><%= car_park.apartment %></td>
+    <td><%= link_to 'Show', car_park %></td>
+    <td><%= link_to 'Edit', edit_car_park_path(car_park) %></td>
+    <td><%= link_to 'Destroy', car_park, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Car park', new_car_park_path %>

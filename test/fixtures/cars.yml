@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  plate: MyString
+  state: MyString
+  city: MyString
+  model: MyString
+  model_id: 1
+
+two:
+  plate: MyString
+  state: MyString
+  city: MyString
+  model: MyString
+  model_id: 1

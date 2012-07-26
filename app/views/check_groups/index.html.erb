@@ -1,0 +1,25 @@
+<h1>Listing check_groups</h1>
+
+<table>
+  <tr>
+    <th>Number</th>
+    <th>Refdate</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @check_groups.each do |check_group| %>
+  <tr>
+    <td><%= check_group.number %></td>
+    <td><%= check_group.refDate %></td>
+    <td><%= link_to 'Show', check_group %></td>
+    <td><%= link_to 'Edit', edit_check_group_path(check_group) %></td>
+    <td><%= link_to 'Destroy', check_group, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Check group', new_check_group_path %>

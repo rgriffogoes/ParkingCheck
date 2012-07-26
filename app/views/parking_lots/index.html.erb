@@ -1,0 +1,33 @@
+<h1>Listing parking_lots</h1>
+
+<table>
+  <tr>
+    <th>Building</th>
+    <th>Apartment</th>
+    <th>X</th>
+    <th>Y</th>
+    <th>Angle</th>
+    <th>Obs</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @parking_lots.each do |parking_lot| %>
+  <tr>
+    <td><%= parking_lot.building %></td>
+    <td><%= parking_lot.apartment %></td>
+    <td><%= parking_lot.x %></td>
+    <td><%= parking_lot.y %></td>
+    <td><%= parking_lot.angle %></td>
+    <td><%= parking_lot.obs %></td>
+    <td><%= link_to 'Show', parking_lot %></td>
+    <td><%= link_to 'Edit', edit_parking_lot_path(parking_lot) %></td>
+    <td><%= link_to 'Destroy', parking_lot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Parking lot', new_parking_lot_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Building:</b>
+  <%= @parking_lot.building %>
+</p>
+
+<p>
+  <b>Apartment:</b>
+  <%= @parking_lot.apartment %>
+</p>
+
+<p>
+  <b>X:</b>
+  <%= @parking_lot.x %>
+</p>
+
+<p>
+  <b>Y:</b>
+  <%= @parking_lot.y %>
+</p>
+
+<p>
+  <b>Angle:</b>
+  <%= @parking_lot.angle %>
+</p>
+
+<p>
+  <b>Obs:</b>
+  <%= @parking_lot.obs %>
+</p>
+
+
+<%= link_to 'Edit', edit_parking_lot_path(@parking_lot) %> |
+<%= link_to 'Back', parking_lots_path %>

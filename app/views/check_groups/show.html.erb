@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Number:</b>
+  <%= @check_group.number %>
+</p>
+
+<p>
+  <b>Refdate:</b>
+  <%= @check_group.refDate %>
+</p>
+
+
+<%= link_to 'Edit', edit_check_group_path(@check_group) %> |
+<%= link_to 'Back', check_groups_path %>
